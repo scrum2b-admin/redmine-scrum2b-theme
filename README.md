@@ -1,7 +1,7 @@
 SUMMARY
 =======
 
-The Scrum2B Theme for RedMine, based on Twitter Bootstrap and other themes
+The Scrum2B Theme for Redmine, based on Twitter Bootstrap and other themes
 This theme is applied to display Scrum2B plugin with the best feeling.
 
 LICENSE
