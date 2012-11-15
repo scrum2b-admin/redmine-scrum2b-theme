@@ -13,11 +13,11 @@ fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, 
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-weight: normal;
 	font-style: normal;
 	font-size: 100%;
 	line-height: 1;
 	font-family: inherit;
+	padding-top: 2px;
 }
 
 table {
@@ -123,32 +123,6 @@ input[type="search"]::-webkit-search-decoration {
 textarea {
 	overflow: auto;
 	vertical-align: top;
-}
-
-html, body {
-	margin: 0;
-	padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p, 
-blockquote, pre, a, abbr, acronym, address, cite, 
-code, del, dfn, em, img, q, s, samp, small, strike, 
-strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, 
-form, label, legend, button, table, caption, tbody, tfoot, 
-thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 100%;
-	line-height: 1;
-	font-family: inherit;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 ol, ul {
@@ -520,11 +494,53 @@ h3 {
 	padding-bottom: 5px;
 }
 
+h3.version {
+	background: url(/images/package.png) no-repeat 0% 85%;
+	padding-top: 30px;
+	margin-bottom: 10px;
+}
+
+p.pourcent {
+	padding-top: 5px;
+}
+
+#roadmap p {
+	padding-bottom: 5px;
+}
+
+.issues h3,
+.members h3 {
+	padding-top: 6px;
+}
+
+p.subtitle {
+	padding-top: 10px;
+}
+
 div.contextual {
 	margin: 10px 10px 0 0;
 }
 
+#relations .contextual,
+#issue_tree .contextual {
+	margin-top: 0px;
+}
+
+
 #main {
 	background: #F6F6F6;
 	border-radius: 5px;
+}
+
+div.issue .next-prev-links {
+	margin-top: 0px;
+}
+
+textarea.wiki-edit,
+input#issue_subject {
+	width: 98%;
+}
+
+p.other-formats {
+	padding-top: 20px;
 }
