@@ -544,3 +544,21 @@ input#issue_subject {
 p.other-formats {
 	padding-top: 20px;
 }
+
+#content .splitcontentleft {
+  padding-top: 10px;  
+  margin-top: 10px;
+}
+
+#content .splitcontentright {
+  padding-top: 10px;
+}
+
+#content .splitcontentright .projects.box ul li {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#content .splitcontentright .projects.box ul li a {
+  font-weight: bold;
+}
