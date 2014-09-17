@@ -15,15 +15,28 @@ fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, 
 	border: 0;
 	font-style: normal;
 	font-size: 100%;
-	line-height: 1;
 	font-family: inherit;
-	padding-top: 2px;
+}
+
+fieldset legend {
+	padding-top: 15px;
 }
 
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+table.attributes {
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+table.attributes td,
+table.attributes th {	
+	padding: 5px 5px 5px 0;
+}
+
 
 ol, ul {
 	list-style: none;
@@ -231,17 +244,20 @@ body, #wrapper {
 
 #top-menu {
 	margin: 0px;
-	padding: 12px 10px 10px 10px;
+	padding: 8px 10px 0px 8px;
 	background: #fffffff;
-	background: -moz-linear-gradient(top, #08C 0%, #000000 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
-	background: -webkit-linear-gradient(top, #08C 0%,#000000 100%);
-	background: -o-linear-gradient(top, #08C 0%,#000000 100%);
-	background: -ms-linear-gradient(top, #08C 0%,#000000 100%);
-	background: linear-gradient(to bottom, #08C 0%,#000000 100%);
+	background: -moz-linear-gradient(top, #08C 0%, #115679  100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#115679 ));
+	background: -webkit-linear-gradient(top, #08C 0%,#115679  100%);
+	background: -o-linear-gradient(top, #08C 0%,#115679  100%);
+	background: -ms-linear-gradient(top, #08C 0%,#115679  100%);
+	background: linear-gradient(to bottom, #08C 0%,#115679  100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
 }
 
+#top-menu a {
+	font-weight: normal;
+}
 #top-menu ul li {
 	margin: 0 10px;
 }
@@ -257,7 +273,6 @@ body, #wrapper {
 	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 	border-bottom: 1px solid #CCC;
-	height: 100px;
 	box-shadow: 0px 2px 2px #EEE;
 }
 
@@ -304,8 +319,7 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
 	font-weight: bold;
 	margin-bottom: 10px;
 	border-radius: 3px;
-	height: 20px;
-	padding: 5px 10px;
+	padding: 10px 10px;
 	font-weight: normal;
 }
 
@@ -422,10 +436,21 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 input[type="text"], input[type="password"], textarea, select {
 	border: 1px solid #d7d7d7;
 	border-radius: 3px;
-	padding: 5px;
+	padding: 0px 5px;
 	color: #333;
+	/* max-width: 100%; */
+	line-height: normal;
+	height: 30px;
+	margin: 0px 5px;
 }
 
+.tabular label {
+	margin-top: 5px;
+}
+
+.hasDatepicker {
+	min-width: 97px;
+}
 /*
  input[type="text"], input[type="password"] {
  padding: 5px;
@@ -536,9 +561,64 @@ div.issue .next-prev-links {
 	margin-top: 0px;
 }
 
+.issue .author {
+	font-size: 12px;
+	font-style: italic;
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+input#time_entry_comments,
 textarea.wiki-edit,
 input#issue_subject {
-	width: 98%;
+	width: 96%;
+}
+
+textarea.wiki-edit,
+textarea#issue_notes,
+textarea#issue_description {
+	min-height: 100px;
+}
+
+#wiki_form textarea.wiki-edit {
+	min-height: 400px;
+	margin-bottom: 20px
+}
+
+.jstEditor,
+.jstElements {
+	margin-left: 5px;
+}
+
+
+#history .has-details{
+	font-size: 10px;
+	font-style: normal;
+	padding: 2px;
+}
+
+#history .has-notes {
+	margin-top: 20px;
+	margin-bottom: 25px;
+	background: #ffffdd;
+	padding: 10px;
+}
+
+#history .has-notes h4 {
+	font-size: 12px;
+	font-style: italic;
+	border-bottom-color: black;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+}
+
+.wiki {
+	font-size: 13px;
+	padding: 10px 10px 20px 10px;
+}
+
+#history .has-notes textarea {
+	min-height: 100px;
 }
 
 p.other-formats {
@@ -561,4 +641,8 @@ p.other-formats {
 
 #content .splitcontentright .projects.box ul li a {
   font-weight: bold;
+}
+
+#sidebar ul li {
+	margin: 3px 2px 5px 0px;
 }
