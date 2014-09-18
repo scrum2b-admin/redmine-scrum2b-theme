@@ -20,6 +20,9 @@ fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, 
 fieldset legend {
 	padding-top: 15px;
 }
+fieldset.box legend {
+	padding-top: 0px;
+}
 
 fieldset.collapsible {
 	padding: 0px 5px;
@@ -30,6 +33,9 @@ fieldset.collapsible table {
 }
 fieldset.collapsible table.query-columns {
 	margin: 0 0 0 5px;
+}
+fieldset.collapsible > legend {
+	background-position: 0px 15px;
 }
 
 fieldset#filters td.field {
@@ -483,6 +489,10 @@ select {
 .tabular label {
 	margin-top: 5px;
 }
+.tabular input[type="checkbox"] {
+	margin-top: 6px;
+	height: 20px;
+} 
 
 .hasDatepicker {
 	min-width: 97px;
@@ -553,7 +563,13 @@ h2 {
 h3 {
 	border-bottom: 1px solid #d7d7d7;
 	padding-bottom: 5px;
+	margin-top: 10px;
 }
+
+.box h3{
+	margin-top: 5px;
+}
+
 
 h3.version {
 	background: url(/images/package.png) no-repeat 0% 85%;
@@ -569,18 +585,23 @@ p.pourcent {
 	padding-bottom: 5px;
 }
 
-.issues h3,
-.members h3 {
-	padding-top: 6px;
-}
 
 p.subtitle {
 	padding-top: 10px;
 }
 
-div.contextual {
+.contextual {
 	margin: 10px 10px 0 0;
 	padding-top: 8px;
+}
+
+.issue .contextual {
+	padding-top: 0px;
+}
+
+#watchers .contextual {
+	padding-top: 0px;
+	margin-top: 0px;
 }
 
 #content div.contextual a {
@@ -670,15 +691,22 @@ p.other-formats {
 	padding-top: 20px;
 }
 
-#content .splitcontentleft {
+#content .splitcontentleft,
+#content .splitcontentright {
   padding-top: 10px;  
   margin-top: 10px;
 }
 
-#content .splitcontentright {
-  padding-top: 10px;
+#content .splitcontentleft .box ul li,
+#content .splitcontentright .box p{
+  padding-top: 5px;
+  padding-bottom: 0px;
 }
 
+#content .splitcontentright .box,
+#content .splitcontentleft .box {
+  margin-top: 15px;
+}
 #content .splitcontentright .projects.box ul li {
   padding-top: 15px;
   padding-bottom: 10px;
@@ -690,4 +718,21 @@ p.other-formats {
 
 #sidebar ul li {
 	margin: 3px 2px 5px 0px;
+}
+
+#projects-index {
+	padding-top: 20px;
+}
+#projects-index ul.projects ul.projects {
+	padding-left: 0.5em;
+	margin-left: 6px;
+}
+
+#activity h3 {
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+#watchers_inputs {
+	margin-top: -5px;
 }
