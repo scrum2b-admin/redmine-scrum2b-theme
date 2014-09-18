@@ -17,9 +17,34 @@ fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, 
 	font-size: 100%;
 	font-family: inherit;
 }
-
 fieldset legend {
 	padding-top: 15px;
+}
+
+fieldset.collapsible {
+	padding: 0px 5px;
+}
+
+fieldset.collapsible table {
+	margin: 0px 15px;
+}
+fieldset.collapsible table.query-columns {
+	margin: 0 0 0 5px;
+}
+
+fieldset#filters td.field {
+	min-width: 110px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+fieldset.collapsible table select[multiple="multiple"] {
+	height: 125px;
+	margin-left: 0px;
+}
+
+fieldset#filters table {
+	margin: 0px 8px;
 }
 
 table {
@@ -198,7 +223,7 @@ img {
 
 button, input, select, textarea {
 	font-size: 100%;
-	margin: 0;
+	margin: 5px;
 	vertical-align: baseline;
 	*vertical-align: middle;
 }
@@ -244,7 +269,7 @@ body, #wrapper {
 
 #top-menu {
 	margin: 0px;
-	padding: 8px 10px 0px 8px;
+	padding: 10px 0px 5px 5px;
 	background: #fffffff;
 	background: -moz-linear-gradient(top, #08C 0%, #115679  100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#115679 ));
@@ -257,7 +282,9 @@ body, #wrapper {
 
 #top-menu a {
 	font-weight: normal;
+	display: inline;
 }
+
 #top-menu ul li {
 	margin: 0 10px;
 }
@@ -436,11 +463,20 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 input[type="text"], input[type="password"], textarea, select {
 	border: 1px solid #d7d7d7;
 	border-radius: 3px;
-	padding: 0px 5px;
+	padding: 8px 5px;
 	color: #333;
 	/* max-width: 100%; */
 	line-height: normal;
+	margin: 0px 5px;
+}
+
+select {
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+	padding: 8px 5px;
+	color: #333;
 	height: 30px;
+	line-height: normal;
 	margin: 0px 5px;
 }
 
@@ -497,7 +533,7 @@ h2 {
 	border: 1px solid #DDD;
 	border-radius: 3px;
 	margin-top: 5px;
-	padding: 5px 10px;
+	padding: 11px 10px;
 	color: #504f4f;
 	text-shadow: 0px 2px 1px #FFF;
 	background: #ffffff; /* Old browsers */
@@ -544,6 +580,15 @@ p.subtitle {
 
 div.contextual {
 	margin: 10px 10px 0 0;
+	padding-top: 8px;
+}
+
+#content div.contextual a {
+	margin: 0px 5px 0px 0px;
+}
+
+#content div.contextual #repository_navigation {
+	margin-top: -8px;
 }
 
 #relations .contextual,
