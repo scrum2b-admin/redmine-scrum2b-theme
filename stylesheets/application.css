@@ -273,6 +273,13 @@ body, #wrapper {
 	font-size: 14px;
 }
 
+.flash {
+	margin-top: 8px;
+	padding: 8px 8px 8px 30px;
+	border-radius: 5px;
+	border-width: 1px;	
+}
+
 #top-menu {
 	margin: 0px;
 	padding: 10px 0px 5px 5px;
@@ -466,10 +473,10 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 }
 
 /* Fields */
-input[type="text"], input[type="password"], textarea, select {
+input[type="text"], input[type="password"], textarea {
 	border: 1px solid #d7d7d7;
 	border-radius: 3px;
-	padding: 8px 5px;
+	padding: 6px 5px;
 	color: #333;
 	/* max-width: 100%; */
 	line-height: normal;
